@@ -1,0 +1,102 @@
+body{
+	line-height: 1;
+    background-color: #FFF;
+    color: #000;
+}
+h1{
+	font-size: 50px;
+}
+img{
+}
+p{
+	font-size: 20px;
+}
+
+.super{
+	padding: 5px;
+}
+
+.info{
+	margin: 20px;
+	border: 5px solid black;
+}
+
+.header{
+	padding: 20px;
+	
+}
+
+.main-info{
+	margin: 0 auto;
+	border-top: 3px solid black;
+}
+.lk{
+	float: left;
+	width: 40%;
+	height: auto;
+	display: inline-block;
+}
+.main-info .rofl-image{
+	width: 500px;
+	height: 260px;
+	margin: 0px;
+	border-right: 2px solid black;
+	margin: 0px;
+}
+
+.main-info .rofl-image .info-image{
+	margin-top: 0px;
+	margin: 10px;
+	display: inline-block;
+
+}
+.main-info .textus-infos .lk{
+	margin-left: 20px;
+	float: right;
+	border-right: none;
+}
+.main-info .textus-infos{
+	margin: 20px;
+	float: none;
+} 
+
+
+.main-info .rofl-image .info-image img{
+	width: 100%;
+	height: 220px;
+}
+
+
+.main-info .text-info{
+	margin: 0px;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+}
+
+.grid-container img{
+  width: 300px;
+  height: 220px;
+}
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.grid-item-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.grid-item-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.first-column{
+	float: left;
+}
+.second-column{
+	width:90%;
+	float: right;
+}
