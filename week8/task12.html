@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+#news{
+   border:1px solid red;
+   width:400px;
+   height:300px;
+}
+</style>
+</head>
+<body>
+
+<div id="news"></div>
+<button id="sport">Load Sport news</button>
+<button id="politics">Load Politics news</button>
+<button id="bussiness">Load Bussiness news</button>
+
+
+<script>
+let buttons = document.querySelectorAll("button");
+for(let i=0;i<buttons.length;i++){
+   buttons[i].onclick=function(){
+      news(i);
+   }
+}
+
+function news(i){
+   let newslist=['http://demo4296963.mockable.io/news-sport','http://demo4296963.mockable.io/news-politics','http://demo4296963.mockable.io/news-bussiness'];
+   fetch(newslist[i]).then(function(response){
+      response.text().then(function(text){
+         document.querySelector('#news').innerHTML=text;
+      });
+   });
+}
+</script>
+</body>
+</html>
